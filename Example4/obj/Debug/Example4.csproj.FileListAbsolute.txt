@@ -1,0 +1,10 @@
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\bin\Debug\Example4.exe.config
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\bin\Debug\Example4.exe
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\bin\Debug\Example4.pdb
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\bin\Debug\StructureMap.dll
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\bin\Debug\StructureMap.Net4.dll
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\bin\Debug\StructureMap.pdb
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\bin\Debug\StructureMap.xml
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\bin\Debug\StructureMap.Net4.pdb
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\obj\Debug\Example4.exe
+c:\users\lhinze\documents\visual studio 2013\Projects\DNUG StructureMap Examples\Example4\obj\Debug\Example4.pdb
