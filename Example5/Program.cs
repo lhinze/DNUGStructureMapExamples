@@ -1,5 +1,5 @@
-﻿using StructureMap;
-using System;
+﻿using System;
+using StructureMap;
 
 namespace Example5
 {
@@ -10,7 +10,7 @@ namespace Example5
             var container = new Container();
             container.Configure(x => x.AddRegistry<ExampleRegistry>());
 
-            var localFoo = container.GetInstance<EFoo>();
+            var localFoo = container.GetInstance<IFoo>();
 
             Console.WriteLine(localFoo.Message);
 

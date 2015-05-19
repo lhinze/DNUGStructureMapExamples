@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using StructureMap;
 
 namespace Example6
@@ -14,7 +10,7 @@ namespace Example6
             var container = new Container();
             container.Configure(x => x.AddRegistry<ExampleRegistry>());
 
-            var localFoo = container.GetInstance<IFoo>();
+            var localFoo = container.GetInstance<Foo>();
 
             Console.WriteLine(localFoo.Message);
 

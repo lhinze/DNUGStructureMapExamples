@@ -1,6 +1,5 @@
 ﻿using System;
 using StructureMap;
-using StructureMap.Graph;
 
 namespace Example3
 {
@@ -9,12 +8,12 @@ namespace Example3
         public static void Main(string[] args)
         {
             var container = new Container(
-                x => x.Scan(
-                    s =>
-                    {
-                        s.TheCallingAssembly();
-                        s.WithDefaultConventions();
-                    }));
+                x =>
+                {
+                    x.For<IFoo>().Use<Foo>();
+                    x.For<IBar>().Use<Bar>();
+                    x.Policies.SetAllProperties(p => p.OfType<IBar>());
+                });
 
             var localFoo = container.GetInstance<IFoo>();
 
@@ -36,12 +35,7 @@ namespace Example3
 
     public class Foo : IFoo
     {
-        private readonly IBar _Bar;
-
-        public Foo(IBar bar)
-        {
-            _Bar = bar;
-        }
+        public IBar _Bar { get; set; }
 
         public string Message
         {

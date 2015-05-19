@@ -10,10 +10,9 @@ namespace Example6
             Scan(s =>
                 {
                     s.TheCallingAssembly();
-                    s.WithDefaultConventions();
+                    //s.WithDefaultConventions();
+                    s.Convention<CustomConvention>();
                 });
-
-            For<IBar>().Use<Bar>().Ctor<string>("name").Is("Registry User");
         }
     }
 }

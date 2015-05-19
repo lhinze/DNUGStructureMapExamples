@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E2BDD068-08EB-4A7E-B222-B1FD36C5C8E4}</ProjectGuid>
+    <ProjectGuid>{AD77AD59-9D47-44B3-AED2-1F4EA0CF20BC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Example5</RootNamespace>
@@ -48,11 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bar.cs" />
-    <Compile Include="CustomConvention.cs" />
     <Compile Include="ExampleRegistry.cs" />
     <Compile Include="Foo.cs" />
-    <Compile Include="EBar.cs" />
-    <Compile Include="EFoo.cs" />
+    <Compile Include="IBar.cs" />
+    <Compile Include="IFoo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

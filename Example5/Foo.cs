@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Example5
+﻿namespace Example5
 {
-    public class Foo : EFoo
+    public class Foo : IFoo
     {
-        private readonly EBar _Bar;
+        private readonly IBar _Bar;
 
-        public Foo(EBar bar)
+        public Foo(IBar bar)
         {
             _Bar = bar;
         }

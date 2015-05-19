@@ -7,13 +7,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1", "Example1\Exampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example2", "Example2\Example2.csproj", "{71242CA9-1541-42B4-83D4-8A4FCD6F5E0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example3", "Example3\Example3.csproj", "{E5663981-C77D-4582-BADA-6D88ACCD891F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example4", "Example4\Example4.csproj", "{E5663981-C77D-4582-BADA-6D88ACCD891F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example4", "Example4\Example4.csproj", "{AD77AD59-9D47-44B3-AED2-1F4EA0CF20BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example5", "Example5\Example5.csproj", "{AD77AD59-9D47-44B3-AED2-1F4EA0CF20BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example5", "Example5\Example5.csproj", "{E2BDD068-08EB-4A7E-B222-B1FD36C5C8E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example6", "Example6\Example6.csproj", "{E2BDD068-08EB-4A7E-B222-B1FD36C5C8E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example6", "Example6\Example6.csproj", "{EF126041-CE32-4B79-8B2E-949D40486DE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example8", "Example8\Example8.csproj", "{EF126041-CE32-4B79-8B2E-949D40486DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example3", "Example3\Example3.csproj", "{C0BAFC8C-6134-4C96-B39C-DF54CDC8D884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example7", "Example7\Example7.csproj", "{5AECBBB0-E1D1-4843-B84B-ED3F5013D9F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example9", "Example9\Example9.csproj", "{BD913570-A11D-4757-B55F-81041C68BB69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleWebForms", "ExampleWebForms\ExampleWebForms.csproj", "{262AA85B-3CA0-4C76-A9A3-D8258CB565DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,22 @@ Global
 		{EF126041-CE32-4B79-8B2E-949D40486DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF126041-CE32-4B79-8B2E-949D40486DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF126041-CE32-4B79-8B2E-949D40486DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BAFC8C-6134-4C96-B39C-DF54CDC8D884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BAFC8C-6134-4C96-B39C-DF54CDC8D884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BAFC8C-6134-4C96-B39C-DF54CDC8D884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BAFC8C-6134-4C96-B39C-DF54CDC8D884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AECBBB0-E1D1-4843-B84B-ED3F5013D9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AECBBB0-E1D1-4843-B84B-ED3F5013D9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AECBBB0-E1D1-4843-B84B-ED3F5013D9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AECBBB0-E1D1-4843-B84B-ED3F5013D9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD913570-A11D-4757-B55F-81041C68BB69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD913570-A11D-4757-B55F-81041C68BB69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD913570-A11D-4757-B55F-81041C68BB69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD913570-A11D-4757-B55F-81041C68BB69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{262AA85B-3CA0-4C76-A9A3-D8258CB565DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{262AA85B-3CA0-4C76-A9A3-D8258CB565DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{262AA85B-3CA0-4C76-A9A3-D8258CB565DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{262AA85B-3CA0-4C76-A9A3-D8258CB565DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,8 +10,7 @@ namespace Example5
             Scan(s =>
                 {
                     s.TheCallingAssembly();
-                    //s.WithDefaultConventions();
-                    s.Convention<CustomConvention>();
+                    s.WithDefaultConventions();
                 });
         }
     }
