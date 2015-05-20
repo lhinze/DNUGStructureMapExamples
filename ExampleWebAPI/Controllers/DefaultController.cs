@@ -1,6 +1,6 @@
-﻿using System.Dynamic;
+﻿using ExampleWebAPI.Services;
+using System.Dynamic;
 using System.Web.Http;
-using ExampleWebAPI.Services;
 
 namespace ExampleWebAPI.Controllers
 {

@@ -17,7 +17,9 @@ namespace ExampleWebAPI.IoC
 
         public IHttpController Create(HttpRequestMessage request, HttpControllerDescriptor controllerDescriptor, Type controllerType)
         {
-            return _Container.GetInstance(controllerType) as IHttpController;
+            var nestedContainer = _Container.GetNestedContainer();
+            request.RegisterForDispose(nestedContainer);
+            return nestedContainer.GetInstance(controllerType) as IHttpController;
         }
     }
 }
