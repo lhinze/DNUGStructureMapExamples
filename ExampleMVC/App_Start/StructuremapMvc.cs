@@ -30,6 +30,7 @@ namespace ExampleMVC.App_Start {
 	using ExampleMVC.DependencyResolution;
 
     using StructureMap;
+    using ExampleMVC.Services;
     
 	public static class StructuremapMvc {
         #region Public Properties
@@ -46,6 +47,9 @@ namespace ExampleMVC.App_Start {
 		
         public static void Start() {
             IContainer container = IoC.Initialize();
+
+            container.Configure(x => x.For<IContactMessageService>().Use<ContectMessageService>());
+
             StructureMapDependencyScope = new StructureMapDependencyScope(container);
             DependencyResolver.SetResolver(StructureMapDependencyScope);
             DynamicModuleUtility.RegisterModule(typeof(StructureMapScopeModule));

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExampleMVC.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,13 @@ namespace ExampleMVC.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IContactMessageService _ContactMessageService;
+
+        public HomeController(IContactMessageService contactMessageService)
+        {
+            _ContactMessageService = contactMessageService;
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -22,7 +30,7 @@ namespace ExampleMVC.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = _ContactMessageService.GetMessage();
 
             return View();
         }
