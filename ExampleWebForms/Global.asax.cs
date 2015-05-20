@@ -1,5 +1,4 @@
 ﻿using ExampleWebForms.Services;
-using StructureMap;
 using System;
 using System.Web;
 using System.Web.Optimization;
@@ -11,14 +10,15 @@ namespace ExampleWebForms
     {
         void Application_Start(object sender, EventArgs e)
         {
-            var container = new Container(
+            var container = IoC.IoC.GetInstance();
+            
+            container.Configure(
                 x =>
                 {
                     x.For<ISiteHeaderService>().Use<SiteHeaderService>();
                     x.Policies.SetAllProperties(p => p.OfType<ISiteHeaderService>());
                 });
-
-            IoC.IoC.Initialize(container);
+            
 
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);

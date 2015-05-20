@@ -9,7 +9,7 @@ namespace ExampleWebForms.IoC
 
         private static IContainer _Container;
 
-        public static void Initialize(IContainer container)
+        public static IContainer GetInstance()
         {
             if (_Container == null)
             {
@@ -17,40 +17,12 @@ namespace ExampleWebForms.IoC
                 {
                     if (_Container == null)
                     {
-                        _Container = container;
+                        _Container = new Container();
                     }
                 }
             }
-        }
 
-        public static T GetInstance<T>()
-        {
-            if (_Container == null) throw new ArgumentException("Must call Initialize before fetching an instance.");
-            return _Container.GetInstance<T>();
-        }
-
-        public static T GetInstance<T>(string name)
-        {
-            if (_Container == null) throw new ArgumentException("Must call Initialize before fetching an instance.");
-            return _Container.GetInstance<T>(name);
-        }
-
-        public static object GetInstance(Type type)
-        {
-            if (_Container == null) throw new ArgumentException("Must call Initialize before fetching an instance.");
-            return _Container.GetInstance(type);
-        }
-
-        public static object GetInstance(Type type, string name)
-        {
-            if (_Container == null) throw new ArgumentException("Must call Initialize before fetching an instance.");
-            return _Container.GetInstance(type, name);
-        }
-
-        public static void BuildUp(object target)
-        {
-            if (_Container == null) throw new ArgumentException("Must call Initialize before building up an object.");
-            _Container.BuildUp(target);
+            return _Container;
         }
     }
 }

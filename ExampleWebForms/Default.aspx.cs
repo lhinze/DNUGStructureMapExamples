@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using ExampleWebForms.Services;
+using System;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using ExampleWebForms.Services;
 
 namespace ExampleWebForms
 {
@@ -15,7 +11,7 @@ namespace ExampleWebForms
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
-            IoC.IoC.BuildUp(this);
+            IoC.IoC.GetInstance().BuildUp(this);
         }
 
         protected void Page_Load(object sender, EventArgs e)
